@@ -1,0 +1,9 @@
+name: "Hello World"
+when: "api"
+jobs:
+  default:
+    description: "I say 'Hello World'"
+    steps:
+      - action: "echo"
+        input:
+          message: "Hello World!"

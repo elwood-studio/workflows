@@ -1,0 +1,14 @@
+name: "Echo"
+when: "api"
+settings:
+  message:
+    type: string
+    prompt: "What message do you want to echo?"
+    required: true
+jobs:
+  default:
+    description: "I say back what you say to me"
+    steps:
+      - action: "echo"
+        input:
+          message: "{{ settings.message }}"
